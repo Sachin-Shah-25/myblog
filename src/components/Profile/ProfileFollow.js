@@ -5,7 +5,6 @@ const ProfileFollow = ({ user }) => {
         key={user._id}
         className="flex w-full p-2 rounded-xl  border border-gray-200 items-center justify-between"
     >
-        {/* Left */}
         <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img

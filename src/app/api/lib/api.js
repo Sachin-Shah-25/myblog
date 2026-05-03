@@ -103,7 +103,6 @@ export async function getAllFollowers() {
             const err = new Error()
             err.message = result.message || "Something went wrong";
             err.status = result.status || 500
-            // throw new Error(result.message || "Something went wrong");
             throw err
         }
         return result.data;

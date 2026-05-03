@@ -28,12 +28,6 @@ const blogSchema = new mongoose.Schema(
       ref: "blogusers",
       required: true,
     },
-    comments: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "comments",
-      },
-    ],
     tags: [
       {
         type: String,
@@ -47,7 +41,7 @@ const blogSchema = new mongoose.Schema(
     ],
   },
   {
-    timestamps: true, // ✅ yaha hona chahiye
+    timestamps: true,
   }
 );
 

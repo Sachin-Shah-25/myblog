@@ -25,6 +25,7 @@ export default function PostPage() {
         refetchOnMount: true
 
     })
+
     const { data, isPending, error } = useQuery({
         queryKey: ["view", id],
         queryFn: async () => {
@@ -48,6 +49,7 @@ export default function PostPage() {
         refetchOnMount: true
     })
 
+    console.log(data)
 
     const updateLike = async () => {
 
@@ -212,7 +214,7 @@ export default function PostPage() {
                 </div>
 
                 <CommentSection
-                    comment={data && data.blog.comments}
+                    comment={data && data.comments}
                     postid={data && data.blog._id}
                     udpateComment={udpateComment}
                     user={userdata.data && userdata.data}

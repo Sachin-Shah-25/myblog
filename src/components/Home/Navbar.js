@@ -26,9 +26,7 @@ function Navbar() {
       }
     }).catch(e => console.log(e.message || "Something went wrong"))
   }
-  if (!getUser) {
-    return;
-  }
+  
   return <nav className="w-full p-2 border-gray-100 flex flex-col justify-center md:flex-row gap-4 md:gap-10 items-center border-b pb-8 px-4">
 
     <div className="flex gap-2 items-center text-2xl font-semibold">
